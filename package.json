@@ -1,0 +1,28 @@
+{
+  "name": "qpi",
+  "version": "1.0.0",
+  "description": "QuickMath Programming Interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify index.js -t babelify | uglifyjs --compress --mangle -- > qpi.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuickMathTeam/qpi.git"
+  },
+  "author": "QuickMath Authors",
+  "license": "UNLICENSED",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/QuickMathTeam/qpi/issues"
+  },
+  "homepage": "https://github.com/QuickMathTeam/qpi#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.1.1",
+    "uglify-js": "^3.3.18"
+  }
+}
